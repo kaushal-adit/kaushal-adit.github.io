@@ -11,7 +11,12 @@
 
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#" class="nav-logo" aria-label="Home">AK</a>
+      <a href="#" class="nav-logo" aria-label="Home">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <path d="M11 3 L20 19 M11 3 L2 19 M5.5 14 L16.5 14"
+                stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
       <nav class="nav-links" aria-label="Main">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -37,17 +42,24 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <p class="hero-eyebrow">Senior Frontend Developer</p>
-        <h1 class="hero-name">Aditya<br>Kaushal</h1>
-        <p class="hero-bio">
-          Seven years shipping web products at scale — from Razorpay's banking suite
-          to real-time messaging and AI interfaces at Sense.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-fill">Get in touch</a>
-          <a href="https://github.com/kaushal-adit" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-            GitHub ↗
-          </a>
+        <div class="hero-layout">
+          <div class="hero-text">
+            <p class="hero-eyebrow">Senior Frontend Developer</p>
+            <h1 class="hero-name">Aditya<br>Kaushal</h1>
+            <p class="hero-bio">
+              Seven years shipping web products at scale — from Razorpay's banking suite
+              to real-time messaging and AI interfaces at Sense.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-fill">Get in touch</a>
+              <a href="https://github.com/kaushal-adit" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+          <div class="hero-avatar">
+            <img src="assets/avatar.jpg" alt="Aditya Kaushal" class="avatar-img" />
+          </div>
         </div>
         <div class="scroll-line" aria-hidden="true"></div>
       </div>
