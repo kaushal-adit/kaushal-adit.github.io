@@ -113,8 +113,16 @@ ul { list-style: none; }
 }
 .nav-links a:hover { color: var(--text); }
 
-.theme-btn {
+.nav-actions {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.nav-btn {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,14 +133,32 @@ ul { list-style: none; }
   background: none;
   color: var(--text);
   cursor: pointer;
-  flex-shrink: 0;
   transition: border-color var(--ease), color var(--ease);
 }
-.theme-btn:hover { border-color: var(--text-muted); }
+.nav-btn:hover { border-color: var(--text-muted); }
+
+.copy-tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--bg);
+  font-size: 11px;
+  font-family: var(--sans);
+  padding: 4px 9px;
+  border-radius: 5px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+.copy-tooltip.visible { opacity: 1; }
 
 .icon-sun { display: none; }
 [data-theme="dark"] .icon-moon { display: none; }
 [data-theme="dark"] .icon-sun  { display: block; }
+
 
 /* ─── Hero ───────────────────────────────────────────────── */
 .hero {

@@ -1,3 +1,15 @@
+// ── Copy link ─────────────────────────────────────────────
+const copyBtn = document.getElementById('copyLink');
+const tooltip = copyBtn.querySelector('.copy-tooltip');
+let tooltipTimer;
+
+copyBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText('https://kaushal-adit.github.io');
+  tooltip.classList.add('visible');
+  clearTimeout(tooltipTimer);
+  tooltipTimer = setTimeout(() => tooltip.classList.remove('visible'), 2000);
+});
+
 // ── Theme ─────────────────────────────────────────────────
 const root = document.documentElement;
 const themeBtn = document.getElementById('themeToggle');
