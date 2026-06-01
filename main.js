@@ -16,14 +16,6 @@ themeBtn.addEventListener('click', () => {
   localStorage.setItem('theme', next);
 });
 
-// ── Avatar — hide slot if image hasn't been added yet ─────
-const avatarImg = document.querySelector('.avatar-img');
-if (avatarImg) {
-  avatarImg.addEventListener('error', () => {
-    avatarImg.closest('.hero-avatar').style.display = 'none';
-  });
-}
-
 // ── Scroll reveal ─────────────────────────────────────────
 const observer = new IntersectionObserver(
   (entries) => {
